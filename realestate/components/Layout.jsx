@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => (
   <>
@@ -7,9 +9,9 @@ const Layout = ({ children }) => (
       <title>Real Extate</title>
     </Head>
     <Box maxWidth="1280px" m="auto">
-      <header>NavBar</header>
+      <header><Navbar /></header>
       <main>{children}</main>
-      <footer>Footer</footer>
+      <footer><Footer/></footer>
     </Box>
   </>
 );
