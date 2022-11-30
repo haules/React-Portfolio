@@ -10,6 +10,9 @@ npm run dev
 yarn dev
 ```
 
+API 
+Access: https://rapidapi.com/apidojo/api/bayut?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel -> create user or log in with GMAIL and create an API. take the X-RapidAPI-Key and the X-RapidAPI-Host and add athem to the urile/fetchApi.js file
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
