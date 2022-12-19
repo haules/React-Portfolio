@@ -1,3 +1,10 @@
+Access the www.stripe.com website -> create an account -> login into the account -> activate TEST MODE (top right corner) -> copy the Publishable Key and the Secret Key -> Go to VSCode -> open/create a .env in your project root folder -> create to variable and assign the keys to the -> NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY = “key”
+NEXT_PUBLIC_STRIPE_SECRET_KEY = “key”
+
+Create a shipping rate:
+Access Stripe.com -> log in -> go to Products tab -> Shipping Rates(left-hand side) -> press the Blue Button called Shipping Rate. -> add only into the description “Free Shipping” -> press Save button -> copy the ID and paste it in the stripe.js file in the shipping_rate: ‘””.
+The second shipping rate is for paid shipping. Follow the above instructions and add £20, description: fast shipping, days: 1 and 3 -> save
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
