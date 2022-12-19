@@ -1,10 +1,9 @@
 import React from "react";
 
-import { Product, FooterBanner, HeroBanner } from "../components";
 import { client } from "../lib/client";
+import { Product, FooterBanner, HeroBanner } from "../components";
 
-function Home({products, bannerData}) {
-  return (
+const Home = ({products, bannerData}) => (
     <div>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
       
@@ -20,8 +19,7 @@ function Home({products, bannerData}) {
 
       <FooterBanner footerBanner={bannerData && bannerData[0]}/>
     </div>
-  );
-}
+)
 
 export const getServerSideProps = async () => {
   const query = '*[_type == "product"]';
